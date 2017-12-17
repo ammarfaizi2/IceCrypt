@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
             "IceCrypt\\": "src/IceCrypt/"
-        }
+        },
+        "files": [
+            "src/IceCrypt/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

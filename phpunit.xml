@@ -10,7 +10,7 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Test">
-            <directory suffix=".php">tests/</directory>
+            <directory suffix="IceCryptTest.php">tests/IceCryptTest.php</directory>
         </testsuite>
     </testsuites>
 </phpunit>

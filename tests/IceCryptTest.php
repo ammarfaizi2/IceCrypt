@@ -9,7 +9,7 @@ class IceCryptTest extends TestCase
 {
 	public function testBinarySafe()
 	{
-		for ($i=0; $i < 1000; $i++) { 
+		for ($i=0; $i < 2000; $i++) { 
 			$string = self::randString($i);
 			$key	= self::randString(rand(32, 64));
 			$encryptedString = IceCrypt::encrypt($string, $key);
@@ -17,6 +17,18 @@ class IceCryptTest extends TestCase
 				IceCrypt::decrypt($encryptedString, $key), $string
 			);
 		}
+	}
+
+	public function testNonBinarySafe()
+	{
+		for ($i=0; $i < 2000; $i++) { 
+			$string = self::randString($i);
+			$key	= self::randString(rand(32, 64));
+			$encryptedString = IceCrypt::encrypt($string, $key, false);
+			$this->assertEquals(
+				IceCrypt::decrypt($encryptedString, $key, false), $string
+			);
+		}	
 	}
 
 	private static function randString($n)

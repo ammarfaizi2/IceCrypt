@@ -10,5 +10,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "IceCrypt\\": "src/IceCrypt/"
+        }
+    }
 }

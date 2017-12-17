@@ -1,0 +1,14 @@
+{
+    "name": "ammarfaizi2/icecrypt",
+    "description": "IceCrypt PHP Encryption",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ammar Faizi",
+            "email": "ammarfaizi2@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -1,5 +1,5 @@
 # IceCrypt PHP Encryption
-
+A tool for secrets management and encryption as a service.
 
 
 # Installation
